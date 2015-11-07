@@ -5,7 +5,7 @@
     throw 'sigma is not declared';
 
   // Initialize packages:
-  sigma.utils.pkg('sigma.canvas.edges.labels');
+  sigma.utils.pkg('sigma.canvas.labels.edges');
 
   /**
    * This label renderer will just display the label on the line of the edge.
@@ -18,7 +18,7 @@
    * @param  {CanvasRenderingContext2D} context      The canvas context.
    * @param  {configurable}             settings     The settings function.
    */
-  sigma.canvas.edges.labels.def =
+  sigma.canvas.labels.edges.def =
     function(edge, source, target, context, settings) {
     if (typeof edge.label !== 'string' || source == target)
       return;
